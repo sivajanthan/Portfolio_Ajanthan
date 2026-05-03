@@ -4,12 +4,12 @@ import { Award, ExternalLink } from 'lucide-react';
 
 const Certifications = () => {
   const certifications = [
-    { title: "Introduction to Python", platform: "DataCamp", year: "2024", link: "#" },
-    { title: "Supervised Learning with scikit-learn", platform: "DataCamp", year: "2024", link: "#" },
-    { title: "Understanding Cloud Computing", platform: "DataCamp", year: "2024", link: "#" },
-    { title: "Understanding Data Engineering", platform: "DataCamp", year: "2024", link: "#" },
-    { title: "Working with the OpenAI API", platform: "DataCamp", year: "2025", link: "#" },
-    { title: "Working with Hugging Face", platform: "DataCamp", year: "2025", link: "#" },
+    { title: "Introduction to Python", platform: "DataCamp", year: "2024", link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/0b66d6595ce75438c6d54eff9d3048a2215a5c86" },
+    { title: "Supervised Learning with scikit-learn", platform: "DataCamp", year: "2024", link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/fe795def18196272bfeaa333d53428e0aeafc6c1" },
+    { title: "Understanding Cloud Computing", platform: "DataCamp", year: "2024", link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/4ee73df917a3ddc6298219744dc7bb57fac15c16" },
+    { title: "Understanding Data Engineering", platform: "DataCamp", year: "2024", link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/64e715597f6465cfdca115642a40ce6b1ecf1c99" },
+    { title: "Working with the OpenAI API", platform: "DataCamp", year: "2025", link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/f8060d5b91f1b8da8fecb8db1d603fed99e10442" },
+    { title: "Working with Hugging Face", platform: "DataCamp", year: "2025", link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/f8060d5b91f1b8da8fecb8db1d603fed99e10442" },
   ];
 
   return (

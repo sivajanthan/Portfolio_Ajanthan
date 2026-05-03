@@ -11,7 +11,7 @@ const FeaturedProjects = () => {
       impact: "Ensured system reliability through out-of-scope detection, prompt-level constraints, and response consistency checks.",
       tech: ["Python", "FAISS", "Sentence Transformers", "LLMs", "LangChain"],
       icon: <Languages className="w-6 h-6 text-primary" />,
-      github: "#",
+      github: "https://github.com/sivajanthan/A-Cross-Lingual-RAG-Framework-for-Public-Guidance",
       demo: "#"
     },
     {

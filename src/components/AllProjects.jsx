@@ -15,7 +15,8 @@ const AllProjects = () => {
       description: "Developed a regression-based predictive model using Random Forest and XGBoost to estimate car prices based on make, model, year, and mileage.",
       tech: ["Python", "XGBoost", "Random Forest", "Flask"],
       date: "Nov 2024",
-      github: "Add GitHub link here",
+      github: "https://github.com/sivajanthan/car_prediction",
+      demo: "https://car-pricepredictor-8.onrender.com",
     },
     {
       title: "Stroke Prediction System",
@@ -23,7 +24,7 @@ const AllProjects = () => {
       description: "Created a machine learning model using Logistic Regression, SVM, and Random Forest to predict stroke risk. Addressed class imbalance with SMOTE.",
       tech: ["Python", "Scikit-Learn", "SMOTE", "SVM"],
       date: "Sep 2024",
-      github: "Add GitHub link here",
+      github: "https://github.com/sivajanthan/Stroke-prediction",
     },
     {
       title: "Movie Recommendation System",
@@ -31,7 +32,7 @@ const AllProjects = () => {
       description: "Implemented a hybrid recommendation system combining collaborative and content-based filtering to suggest personalized movies.",
       tech: ["Python", "Cosine Similarity", "Matrix Factorization"],
       date: "Sep 2024",
-      github: "Add GitHub link here",
+      github: "https://github.com/sivajanthan/Movie-recoomendation-System",
     },
     {
       title: "Sai Photography Studio Management",
@@ -39,7 +40,7 @@ const AllProjects = () => {
       description: "Designed and developed a full-stack web application using MERN stack to manage studio operations, bookings, and customers.",
       tech: ["MongoDB", "Express", "React", "Node.js"],
       date: "May 2024",
-      github: "Add GitHub link here",
+      github: "https://github.com/sivajanthan/ITP-project",
     },
     {
       title: "Fabric Type Classification Model",
@@ -109,9 +110,14 @@ const AllProjects = () => {
                       <Folder className="text-secondary" size={24} />
                     </div>
                     <div className="flex gap-3">
-                      <a href={project.github === "Add GitHub link here" ? "#" : project.github} className="text-slate-400 hover:text-primary transition-colors" title={project.github}>
+                      <a href={project.github === "Add GitHub link here" ? "#" : project.github} className="text-slate-400 hover:text-primary transition-colors" title="GitHub">
                         <Github size={20} />
                       </a>
+                      {project.demo && (
+                        <a href={project.demo} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-secondary transition-colors" title="Live Demo">
+                          <ExternalLink size={20} />
+                        </a>
+                      )}
                     </div>
                   </div>
                   
