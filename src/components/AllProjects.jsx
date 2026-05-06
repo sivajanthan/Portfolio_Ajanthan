@@ -43,14 +43,6 @@ const AllProjects = () => {
       github: "https://github.com/sivajanthan/ITP-project",
     },
     {
-      title: "Fabric Type Classification Model",
-      category: "AI/ML",
-      description: "Deep learning based image classification model to categorize different types of fabrics automatically for textile quality assurance.",
-      tech: ["PyTorch", "CNNs", "Computer Vision"],
-      date: "2024",
-      github: "Add GitHub link here",
-    },
-    {
       title: "Tamil Bible Chatbot (RAG)",
       category: "RAG / NLP",
       description: "A semantic search and response generation system for the Tamil Bible using open-source LLMs and vector embeddings.",
