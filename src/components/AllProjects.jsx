@@ -10,6 +10,14 @@ const AllProjects = () => {
 
   const projects = [
     {
+      title: "Cross-Lingual Legal RAG System",
+      category: "RAG / NLP",
+      description: "A technically validated RAG framework for public legal guidance supporting Tamil, Sinhala, English, and Tanglish queries.",
+      tech: ["Python", "FAISS", "Sentence Transformers", "LLMs", "LangChain"],
+      date: "2024",
+      github: "https://github.com/sivajanthan/A-Cross-Lingual-RAG-Framework-for-Public-Guidance",
+    },
+    {
       title: "Car Price Prediction System",
       category: "Data Science",
       description: "Developed a regression-based predictive model using Random Forest and XGBoost to estimate car prices based on make, model, year, and mileage.",

@@ -6,15 +6,6 @@ import { GithubIcon as Github } from './icons';
 const FeaturedProjects = () => {
   const featuredProjects = [
     {
-      title: "Cross-Lingual Legal RAG System",
-      description: "A technically validated RAG framework for public legal guidance supporting Tamil, Sinhala, English, and Tanglish queries.",
-      impact: "Ensured system reliability through out-of-scope detection, prompt-level constraints, and response consistency checks.",
-      tech: ["Python", "FAISS", "Sentence Transformers", "LLMs", "LangChain"],
-      icon: <Languages className="w-6 h-6 text-primary" />,
-      github: "https://github.com/sivajanthan/A-Cross-Lingual-RAG-Framework-for-Public-Guidance",
-      demo: null
-    },
-    {
       title: "IoT-Based Water Quality Monitoring & Analytics",
       description: "An end-to-end IoT platform to monitor real-time water quality metrics and analyze trends using machine learning models.",
       impact: "Provided dynamic insights to improve water safety and public health management.",
