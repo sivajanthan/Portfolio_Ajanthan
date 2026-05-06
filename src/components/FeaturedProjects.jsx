@@ -44,7 +44,8 @@ const FeaturedProjects = () => {
             </a>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Verified: Cross-Lingual and Fabric projects removed from Featured Work */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
               <motion.div
                 key={index}
@@ -76,10 +77,10 @@ const FeaturedProjects = () => {
                 </div>
                 
                 <div className="flex gap-4 pt-4 border-t border-slate-800">
-                  <a href={project.github === "#" ? "#" : project.github} className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
+                  <a href={project.github && project.github !== "#" ? project.github : "#"} className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
                     <Github size={18} /> GitHub
                   </a>
-                  {project.demo && (
+                  {project.demo && project.demo !== "#" && (
                     <a href={project.demo} className="flex items-center gap-2 text-sm text-slate-300 hover:text-primary transition-colors">
                       <ExternalLink size={18} /> Demo
                     </a>

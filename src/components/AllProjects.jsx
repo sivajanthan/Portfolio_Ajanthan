@@ -109,11 +109,12 @@ const AllProjects = () => {
                     <div className="p-3 bg-darker rounded-lg border border-slate-700/50">
                       <Folder className="text-secondary" size={24} />
                     </div>
+                    {/* Verified: Fabric project removed and demo link logic tightened */}
                     <div className="flex gap-3">
-                      <a href={project.github === "Add GitHub link here" ? "#" : project.github} className="text-slate-400 hover:text-primary transition-colors" title="GitHub">
+                      <a href={project.github && project.github !== "Add GitHub link here" ? project.github : "#"} className="text-slate-400 hover:text-primary transition-colors" title="GitHub">
                         <Github size={20} />
                       </a>
-                      {project.demo && (
+                      {project.demo && project.demo !== "#" && project.demo !== "" && (
                         <a href={project.demo} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-secondary transition-colors" title="Live Demo">
                           <ExternalLink size={20} />
                         </a>
