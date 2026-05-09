@@ -50,14 +50,6 @@ const AllProjects = () => {
       date: "May 2024",
       github: "https://github.com/sivajanthan/ITP-project",
     },
-    {
-      title: "Tamil Bible Chatbot (RAG)",
-      category: "RAG / NLP",
-      description: "A semantic search and response generation system for the Tamil Bible using open-source LLMs and vector embeddings.",
-      tech: ["LangChain", "LLMs", "FAISS", "Python"],
-      date: "2024",
-      github: "Add GitHub link here",
-    }
   ];
 
   const filteredProjects = filter === 'All' 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Activity, Languages, Database, BarChart2 } from 'lucide-react';
+import { ExternalLink, Activity } from 'lucide-react';
 import { GithubIcon as Github } from './icons';
 
 const FeaturedProjects = () => {
@@ -11,16 +11,7 @@ const FeaturedProjects = () => {
       impact: "Provided dynamic insights to improve water safety and public health management.",
       tech: ["ESP32", "Node.js", "Express", "MongoDB", "FastAPI", "React"],
       icon: <Activity className="w-6 h-6 text-secondary" />,
-      github: "#",
-      demo: null
-    },
-    {
-      title: "Dynamic Pricing Engine",
-      description: "An AI-powered pricing optimization engine tailored for retail and e-commerce platforms.",
-      impact: "Adjusted prices dynamically based on demand, inventory, and competitor metrics to maximize revenue.",
-      tech: ["Python", "XGBoost", "Pandas", "Flask"],
-      icon: <BarChart2 className="w-6 h-6 text-primary" />,
-      github: "#",
+      github: "https://github.com/sivajanthan/water_quality_IOT",
       demo: null
     }
   ];
@@ -77,7 +68,7 @@ const FeaturedProjects = () => {
                 </div>
                 
                 <div className="flex gap-4 pt-4 border-t border-slate-800">
-                  <a href={project.github && project.github !== "#" ? project.github : "#"} className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
+                  <a href={project.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
                     <Github size={18} /> GitHub
                   </a>
                   {project.demo && project.demo !== "#" && (
